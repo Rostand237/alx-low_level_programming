@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
- * Description: a program that prints the possible combinations of digits
  * Return: Always 0 (Success)
  */
 int mai(void)
@@ -27,4 +28,6 @@ int mai(void)
 	}
 	}
 	}
+	putchar('\n');
+	return (0);
 }
