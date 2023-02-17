@@ -3,9 +3,11 @@
 #include <time.h>
 /**
  * main - Entry point
+ * Description: A program that prints all possible different
+ * combinations of three digits.
  * Return: Always 0 (Success)
  */
-int mai(void)
+int main(void)
 {
 	int d, p, q;
 
