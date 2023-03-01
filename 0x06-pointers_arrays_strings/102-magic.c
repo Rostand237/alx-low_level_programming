@@ -1,9 +1,4 @@
 #include <stdio.h>
-/**
- * main - add one line to the code
- *
- * Return: Always 0.
- */
 
 int main(void)
 {
@@ -14,8 +9,8 @@ int main(void)
 	a[2] = 1024;
 	p = &n;
 /*
- * write your lineof code here...
- * Rememebr:
+ * write your line of code here...
+ * Remember:
  * - you are not allowed to use a
  * - you are not allowed to modify p
  * - only one statement
