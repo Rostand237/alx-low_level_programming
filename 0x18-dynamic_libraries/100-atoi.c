@@ -10,20 +10,21 @@
 
 int _atoi(char *s)
 {
-	int sign = 1, i = 0;
-	unsigned int res = 0;
+	int sign = 1, resp = 0, firstNum;
 
-	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
+	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
 	{
-		if (s[i] == '-')
+		if (s[firstNum] == '-')
+		{
 			sign *= -1;
-		i++;
+		}
 	}
-	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+
+	for (int i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
 	{
-		res = (res * 10) + (s[i] - '0');
-		i++;
+		resp *= 10;
+		resp += (s[i] - 48);
 	}
-	res *= sign;
-	return (res);
+
+	return (sign * resp);
 }
